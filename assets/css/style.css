@@ -106,16 +106,10 @@ body::before {
 
 .card__actions {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   gap: 1rem;
-  align-items: center;
-}
-
-@media (min-width: 40rem) {
-  .card__actions {
-    flex-direction: row;
-    justify-content: center;
-  }
+  justify-content: center;
 }
 
 .button {
