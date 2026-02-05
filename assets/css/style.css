@@ -50,8 +50,11 @@ body::before {
   z-index: 1;
   display: grid;
   place-items: center;
-  min-height: 100vh;
-  padding: 3vh 8vw;
+  justify-content: center;
+  align-content: center;
+  min-height: 100dvh;
+  padding: clamp(2vh, 5vh, 4rem) clamp(1.5rem, 5vw, 3rem);
+  width: 100%;
 }
 
 .stage > * {
@@ -66,6 +69,7 @@ body::before {
   backdrop-filter: blur(0.8rem);
   background: rgba(255, 255, 255, 0.9);
   box-shadow: var(--shadow-soft);
+  margin-inline: auto;
 }
 
 .card {
@@ -240,6 +244,18 @@ body::before {
   font-weight: 600;
   color: var(--rose-700);
   text-shadow: 0 0.2rem 0.4rem rgba(255, 255, 255, 0.7);
+}
+
+.success__cta {
+  margin-top: 3.5rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-decoration: none;
+}
+
+.success__cta a {
+  color: #2d65ff;
+  text-decoration: underline;
 }
 
 
